@@ -1,0 +1,29 @@
+<div class="bg-warning mt-4 p-4">
+    <div class="text-center">
+      <img src="assets/images/ile.png" alt="Image étudiant" class="mx-auto d-block w-50">
+    </div>
+  
+    <div class="text-center mb-3 mt-4">
+      <h2 class="bg-dark text-warning p-2">Étudiants habitant hors Paris</h2>
+    </div>
+  
+    <div class="table-responsive mt-4">
+      <table class="table table-bordered border-dark table-striped w-50 mx-auto">
+        <thead class="thead-dark text-center">
+          <tr>
+            <th scope="col" class="bg-warning align-middle">Nom</th>
+            <th scope="col" class="bg-warning align-middle">Prénom</th>
+            <th scope="col" class="bg-warning align-middle">Adresse</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr *ngFor="let etudiant of etudiantsHorsParis">
+            <td class="bg-primary text-white align-middle">{{ etudiant._nom }}</td>
+            <td class="bg-primary text-white align-middle">{{ etudiant._prenom }}</td>
+            <td class="bg-primary text-white align-middle">{{ etudiant._rue }}, {{ etudiant._cp }}, {{ etudiant._ville }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

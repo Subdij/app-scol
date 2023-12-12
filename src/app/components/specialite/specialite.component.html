@@ -1,0 +1,26 @@
+<div class="bg-warning mt-4 p-4">
+  <div class="text-center">
+    <img src="assets/images/bako.jpg" alt="Image spécialité" class="mx-auto d-block w-50">
+  </div>
+
+  <div class="text-center mb-3 mt-4">
+    <h2 class="bg-dark text-warning p-2">Liste des spécialité</h2>
+  </div>
+
+  <div class="table-responsive mt-4">
+    <table class="table table-bordered border-dark table-striped w-50 mx-auto">
+      <thead class="thead-dark text-center">
+        <tr>
+          <th scope="col" class="bg-warning align-middle">Libellé</th>
+          <th scope="col" class="bg-warning align-middle">ID</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr *ngFor="let specialite of specialites">
+          <td class="bg-primary text-white align-middle">{{ specialite._libelle }}</td>
+          <td class="bg-primary text-white align-middle">{{ specialite._idSpec }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
